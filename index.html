@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/app.css">
+  <style>
+       
+  </style>
+</head>
+
+<body>
+<div class="start_timer_buttons_scroll_wrapper"></div>
+<div class="start_timer_buttons">
+    <button id="timer_date">date timer (alt+1)</button>
+    <button id="timer_minutes">minutes timer (alt+2)</button>
+</div>
+
+  <div class="create_popup" id="create_popup_date">
+    <div class="days_block">
+        <div class="select" id="days_select"></div>
+        <div class="options" id="days_options"></div>
+    </div>
+
+    <div class="months_block">
+        <div class="select" id="months_select"></div>
+        <div class="options" id="months_options">
+          <div class="option">Январь</div>
+          <div class="option">Февраль</div>
+          <div class="option">Март</div>
+          <div class="option">Апрель</div>
+          <div class="option">Май</div>
+          <div class="option">Июнь</div>
+          <div class="option">Июль</div>
+          <div class="option">Август</div>
+          <div class="option">Сентябрь</div>
+          <div class="option">Октябрь</div>
+          <div class="option">Ноябрь</div>
+          <div class="option">Декабрь</div>
+        </div>
+    </div>
+
+    <div class="hours_block">
+        <div class="select" id="hours_select"></div>
+        <div class="options" id="hours_options"></div>
+    </div>
+
+    <div class="mins_block">
+        <div class="select" id="mins_select"></div>
+        <div class="options" id="mins_options"></div>
+    </div>
+    <button id="create_button_date_timer">Создать таймер</button>
+    </div>
+    <div class="create_popup" id="create_popup_minutes">
+      <div class="create_popup_minutes_min_block">
+      <input type="text" class="input_popup" name="min" value="5">
+      <div class="create_popup_minutes_text">
+          MIN
+    </div>
+      </div>
+      <div class="create_popup_minutes_sec_block">
+      <input type="text" class="input_popup" name="sec" value="00">
+          <div class="create_popup_minutes_text">
+            SEC
+          </div>
+        </div>
+      <button id="create_button_minute_timer">CREATE</button>
+    </div>
+    <div class="help_block">
+        <div class="help_block_main_text">test</div>
+        <div class="close_button"></div>
+        <div class="help_block_help_text">(окно закроется через 5 секунд)</div>
+    </div>
+
+
+
+  
+  
+  <script src="dist/app.js"></script>
+</body>
+
+</html>
