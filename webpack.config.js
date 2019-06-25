@@ -1,6 +1,8 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+var HtmlMinifierPlugin = require('html-minifier-webpack-plugin');
+
 
 
 module.exports = {
@@ -39,12 +41,16 @@ module.exports = {
               ]
             }
           },
+          { test: /\.html$/, loaders: ['file-loader?name=[name].html', 'extract-loader', 'html-loader'] },
         ]
       }
     ]
   },
   plugins: [
     new MiniCssExtractPlugin({ filename: '[name].css'}),
+    new HtmlMinifierPlugin({
+      // HTMLMinifier options
+  })
   ],
   devtool: 'cheap-eval-source-map'
 };
